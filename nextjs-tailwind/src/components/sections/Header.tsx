@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import LangButton from '../elements/LangButton';
 import ThemeButton from '../elements/ThemeButton';
 
 const navigations = [
@@ -14,13 +15,16 @@ export default function Header() {
         <Link href="/">
           <a className="text-xl">Next.js</a>
         </Link>
-        <div className="flex items-center space-x-12">
+        <div className="flex grow items-center justify-center space-x-10">
           {navigations.map(nav => (
             <Link key={nav.label} href={nav.path}>
-              <a className="hover:opacity-80">{nav.label}</a>
+              <a className="hover:opacity-75">{nav.label}</a>
             </Link>
           ))}
-          <ThemeButton className="text-xl hover:opacity-80" />
+        </div>
+        <div className="flex items-center space-x-6">
+          <ThemeButton className="text-xl hover:opacity-75" />
+          <LangButton className="text-xl hover:opacity-75" />
         </div>
       </nav>
     </header>

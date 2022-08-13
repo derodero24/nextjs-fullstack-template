@@ -1,10 +1,13 @@
 import Head from 'next/head';
 
 import Layout from '../components/layouts/Layout';
+import { useLocale } from '../hooks/useLocale';
 
 import type { NextPageWithLayout } from 'next';
 
 const Home: NextPageWithLayout = () => {
+  const { t } = useLocale();
+
   return (
     <>
       <Head>
@@ -13,7 +16,7 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <main className="grow px-6 py-2">
         <div className="container mx-auto">
-          <div className="text-xl">Hello World!</div>
+          <div className="text-xl">{t.MAIN_CONTENT}</div>
         </div>
       </main>
     </>
