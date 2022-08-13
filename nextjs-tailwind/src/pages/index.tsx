@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Layout from '../components/layouts/layout';
+import Layout from '../components/layouts/Layout';
 
 import type { NextPageWithLayout } from 'next';
 
