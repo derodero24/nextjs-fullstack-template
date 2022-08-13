@@ -14,14 +14,14 @@ export default function Header() {
         <Link href="/">
           <a className="text-xl">Next.js</a>
         </Link>
-        <ul className="flex items-center space-x-12">
+        <div className="flex items-center space-x-12">
           {navigations.map(nav => (
             <Link key={nav.label} href={nav.path}>
               <a className="hover:opacity-80">{nav.label}</a>
             </Link>
           ))}
           <ThemeSwitch className="text-xl hover:opacity-80" />
-        </ul>
+        </div>
       </nav>
     </header>
   );

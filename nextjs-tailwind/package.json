@@ -4,7 +4,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "next build",
-    "start": "next dev"
+    "start": "next start",
+    "dev": "next dev"
   },
   "dependencies": {
     "autoprefixer": "^10.4.8",
