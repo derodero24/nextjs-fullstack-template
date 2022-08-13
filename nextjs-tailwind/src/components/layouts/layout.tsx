@@ -1,5 +1,5 @@
-import Footer from '../section/footer';
-import Header from '../section/header';
+import Footer from '../sections/footer';
+import Header from '../sections/header';
 
 import type { ReactNode } from 'react';
 

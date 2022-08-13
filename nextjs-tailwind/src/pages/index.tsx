@@ -14,7 +14,7 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <main className="grow px-6 py-2">
         <div className="container mx-auto">
-          <div className="text-2xl font-bold">Hello World!</div>
+          <div className="text-xl">Hello World!</div>
         </div>
       </main>
     </>

@@ -14,18 +14,22 @@ specifiers:
   eslint-plugin-tailwindcss: ^3.6.0
   eslint-plugin-unused-imports: ^2.0.0
   next: 12.2.5
+  next-themes: ^0.2.0
   postcss: ^8.4.16
   react: 18.2.0
   react-dom: 18.2.0
+  react-icons: ^4.4.0
   tailwindcss: ^3.1.8
   typescript: 4.7.4
 
 dependencies:
   autoprefixer: 10.4.8_postcss@8.4.16
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
+  next-themes: 0.2.0_3xcjr4wz26biff45sz3jtokgje
   postcss: 8.4.16
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.4.0_react@18.2.0
   tailwindcss: 3.1.8
 
 devDependencies:
@@ -1610,6 +1614,18 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /next-themes/0.2.0_3xcjr4wz26biff45sz3jtokgje:
+    resolution: {integrity: sha512-myhpDL4vadBD9YDSHiewqvzorGzB03N84e+3LxCwHRlM/hiBOaW+UsKsQojQAzC7fdcJA0l2ppveXcYaVV+hxQ==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 12.2.5_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /next/12.2.5_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-tBdjqX5XC/oFs/6gxrZhjmiq90YWizUYU6qOWAfat7zJwrwapJ+BYgX2PmiacunXMaRpeVT4vz5MSPSLgNkrpA==}
     engines: {node: '>=12.22.0'}
@@ -1908,6 +1924,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.4.0_react@18.2.0:
+    resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
