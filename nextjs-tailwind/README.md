@@ -1,4 +1,4 @@
-# Node.js with daisyUI Template
+# Next.js with Tailwind CSS Template
 
 ## commands
 
