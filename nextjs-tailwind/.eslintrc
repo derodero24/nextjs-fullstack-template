@@ -47,7 +47,6 @@
       }
     ],
     "import/no-anonymous-default-export": "off",
-    "unused-imports/no-unused-imports": "warn",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -56,6 +55,7 @@
         "destructuredArrayIgnorePattern": "^_",
         "caughtErrorsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "unused-imports/no-unused-imports": "warn"
   }
 }
