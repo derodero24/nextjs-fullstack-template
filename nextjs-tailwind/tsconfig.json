@@ -11,12 +11,12 @@
     ],
     "jsx": "preserve",
     "allowJs": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "isolatedModules": true,
     "noEmit": true,
     "removeComments": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "incremental": true
+    "resolveJsonModule": true
   },
   "include": [
     "**/*.ts",
