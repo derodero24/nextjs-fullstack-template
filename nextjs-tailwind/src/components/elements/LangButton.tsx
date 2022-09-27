@@ -7,7 +7,7 @@ const langs = [
   { locale: 'en', label: '🇺🇸 English' },
 ];
 
-export default function ThemeButton(props: { className: string }) {
+export default function LangButton(props: { className: string }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
