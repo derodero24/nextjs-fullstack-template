@@ -2,13 +2,12 @@ import '../styles/global.css';
 
 import { ThemeProvider } from 'next-themes';
 
-import type { AppPropsWithLayout } from 'next/app';
+import type { AppProps } from 'next/app';
 
-export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  const getLayout = Component.getLayout ?? (page => page);
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
-      {getLayout(<Component {...pageProps} />)}
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
