@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="grow px-6 py-2">
         <div className="container mx-auto">
-          <div className="text-xl">{t.MAIN_CONTENT}</div>
+          <div className="text-xl">{t('home/greet')}</div>
         </div>
       </main>
     </Layout>
