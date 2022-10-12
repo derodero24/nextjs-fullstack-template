@@ -5,6 +5,8 @@ import { useLocale } from '../hooks/useLocale';
 
 import type { NextPage } from 'next';
 
+const ENV = process.env.NEXT_PUBLIC_ENV;
+
 const Home: NextPage = () => {
   const { t } = useLocale();
 
@@ -16,7 +18,8 @@ const Home: NextPage = () => {
       </Head>
       <main className="grow px-6 py-2">
         <div className="container mx-auto">
-          <div className="text-xl">{t('home/greet')}</div>
+          <p className="text-xl">Stage: {ENV}</p>
+          <p className="text-xl">{t('home/greet')}</p>
         </div>
       </main>
     </Layout>
