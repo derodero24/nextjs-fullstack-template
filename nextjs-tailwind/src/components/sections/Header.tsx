@@ -10,8 +10,8 @@ const navigations = [
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 px-6 py-2">
-      <nav className="container mx-auto flex justify-between text-white">
+    <header className="px-6 py-2">
+      <nav className="container mx-auto flex justify-between">
         <Link href="/">
           <a className="text-xl">Next.js</a>
         </Link>
