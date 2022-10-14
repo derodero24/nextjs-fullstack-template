@@ -4,6 +4,21 @@ export default function MyDocument() {
   return (
     <Html>
       <Head>
+        <meta name="author" content="@derodero24" />
+
+        {/* Colors */}
+        <meta name="theme-color" content="#1f2937" />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="#f3f4f6"
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="#1f2937"
+        />
+
         {/* icons */}
         <link rel="icon" sizes="any" href="/favicon.ico" />
         <link rel="icon" type="image/svg+xml" href="/icon.svg" />
