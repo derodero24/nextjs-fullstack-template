@@ -10,22 +10,20 @@ const navigations = [
 
 export default function Header() {
   return (
-    <header className="px-6 py-2">
-      <nav className="container mx-auto flex justify-between">
-        <Link href="/">
-          <a className="text-xl">Next.js</a>
-        </Link>
-        <div className="flex grow items-center justify-center space-x-10">
-          {navigations.map(nav => (
-            <Link key={nav.label} href={nav.path}>
-              <a className="hover:opacity-75">{nav.label}</a>
-            </Link>
-          ))}
-        </div>
-        <div className="flex items-center space-x-6">
-          <ThemeButton className="text-xl hover:opacity-75" />
-          <LangButton className="text-xl hover:opacity-75" />
-        </div>
+    <header className="container flex justify-between">
+      <Link href="/">
+        <a className="text-xl">Next.js</a>
+      </Link>
+      <nav className="flex grow items-center justify-center space-x-10">
+        {navigations.map(nav => (
+          <Link key={nav.label} href={nav.path}>
+            <a className="hover:opacity-75">{nav.label}</a>
+          </Link>
+        ))}
+      </nav>
+      <nav className="flex items-center space-x-6">
+        <ThemeButton className="text-xl hover:opacity-75" />
+        <LangButton className="text-xl hover:opacity-75" />
       </nav>
     </header>
   );
