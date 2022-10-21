@@ -58,6 +58,7 @@
         "caughtErrorsIgnorePattern": "^_"
       }
     ],
+    "tailwindcss/no-custom-classname": "off",
     "unused-imports/no-unused-imports": "warn"
   }
 }

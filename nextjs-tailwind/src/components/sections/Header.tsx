@@ -11,9 +11,9 @@ export default function Header() {
         <a className="text-xl">Next.js</a>
       </Link>
       <nav className="flex items-center space-x-6">
-        <ThemeButton className="header-btn" />
-        <LangButton className="header-btn" />
-        <GitHubButton className="header-btn" />
+        <ThemeButton className="icon-btn" />
+        <LangButton className="icon-btn" />
+        <GitHubButton className="icon-btn" />
       </nav>
     </header>
   );
