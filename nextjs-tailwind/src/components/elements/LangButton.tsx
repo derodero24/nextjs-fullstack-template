@@ -32,13 +32,14 @@ export default function LangButton(props: { className: string }) {
           onBlur={e => console.log(e)}
         >
           {langs.map(lang => (
-            <Link href="" locale={lang.locale} key={lang.locale}>
-              <a
-                className="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                onClick={() => setShowDropdown(false)}
-              >
-                {lang.label}
-              </a>
+            <Link
+              href=""
+              locale={lang.locale}
+              key={lang.locale}
+              className="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
+              onClick={() => setShowDropdown(false)}
+            >
+              {lang.label}
             </Link>
           ))}
         </div>
