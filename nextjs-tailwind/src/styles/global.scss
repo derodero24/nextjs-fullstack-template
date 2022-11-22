@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply box-border whitespace-pre-wrap;
+  }
+
   html,
   body {
     @apply bg-gray-100 text-gray-800;
