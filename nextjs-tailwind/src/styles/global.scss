@@ -19,6 +19,19 @@
     @apply duration-300;
     -webkit-tap-highlight-color: transparent; // ボタンタップ時の青い四角を消す
   }
+
+  // inline -> inline-block
+  a,
+  button,
+  img,
+  input,
+  label,
+  select,
+  span,
+  svg,
+  textarea {
+    @apply inline-block;
+  }
 }
 
 @layer components {
