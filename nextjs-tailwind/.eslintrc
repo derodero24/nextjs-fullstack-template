@@ -58,6 +58,7 @@
         "caughtErrorsIgnorePattern": "^_"
       }
     ],
+    "@typescript-eslint/ban-tslint-comment": "off",
     "tailwindcss/no-custom-classname": "off",
     "unused-imports/no-unused-imports": "warn"
   }
