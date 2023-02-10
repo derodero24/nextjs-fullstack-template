@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 
 export default function Layout(props: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-inner-screen flex-col">
       <Header />
       <main className="grow">{props.children}</main>
       <Footer />

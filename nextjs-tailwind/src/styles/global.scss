@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@mixin fullscreen {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-}
-
 @layer base {
   * {
     @apply box-border whitespace-pre-wrap;

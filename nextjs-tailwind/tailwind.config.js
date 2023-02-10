@@ -15,6 +15,9 @@ module.exports = {
       fontSize: {
         '2xs': ['0.625rem', '0.875rem'],
       },
+      minHeight: {
+        'inner-screen': 'calc(var(--vh, 1vh) * 100)',
+      },
     },
   },
   plugins: [],
