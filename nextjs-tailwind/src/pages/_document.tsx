@@ -5,6 +5,7 @@ export default function MyDocument() {
     <Html>
       <Head>
         <meta name="author" content="@derodero24" />
+        <meta name="keywords" content="Next.js, Template" />
 
         {/* Colors */}
         <meta name="theme-color" content="#1F2937" />

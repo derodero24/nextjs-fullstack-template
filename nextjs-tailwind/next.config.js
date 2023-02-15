@@ -9,8 +9,8 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   i18n: {
-    locales: ['ja', 'en'],
-    defaultLocale: 'ja',
+    locales: ['en', 'ja'],
+    defaultLocale: 'en',
   },
 };
 
