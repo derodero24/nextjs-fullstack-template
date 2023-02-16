@@ -8,6 +8,8 @@
 - ESLint (strict)
 - Prettier
 - pnpm
+- SSG (Static Site Generation) using `getStaticProps`
+- Simple API route
 - Extended Tailwind Configuration
 - Theme switching (Light/Dark)
 - Multilingual support
@@ -16,7 +18,7 @@
 - Custom font (Google Fonts)
 - Multiple Icons
 - Dynamic vh (for mobile browser)
-- Environment variables using .env
+- Environment variables using .env.local
 - Common Layout
 - robots.txt
 
@@ -34,7 +36,7 @@ $ git clone https://github.com/derodero24/nextjs-best-template
 $ pnpm i
 ```
 
-3. Prepare .env
+3. Prepare .env.local
 
 ```sh
 $ cp .env.local.example .env.local

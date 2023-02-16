@@ -2,10 +2,10 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { IoLanguage } from 'react-icons/io5';
 
-const langs = [
-  { locale: 'ja', label: '🇯🇵 日本語' },
+const LANGS = [
   { locale: 'en', label: '🇺🇸 English' },
-];
+  { locale: 'ja', label: '🇯🇵 日本語' },
+] as const;
 
 export default function LangButton(props: { className: string }) {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -31,7 +31,7 @@ export default function LangButton(props: { className: string }) {
           className="absolute right-0 mt-2 rounded-md bg-gray-50 py-1 shadow-lg ring-1 ring-black/5"
           onBlur={e => console.log(e)}
         >
-          {langs.map(lang => (
+          {LANGS.map(lang => (
             <Link
               href=""
               locale={lang.locale}

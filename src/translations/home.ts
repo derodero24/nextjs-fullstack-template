@@ -1,6 +1,6 @@
 export default {
   greet: {
-    en: 'Hello World!',
-    ja: 'こんにちは 世界！',
+    en: 'Hello,',
+    ja: 'こんにちは、',
   },
 } as Translation;

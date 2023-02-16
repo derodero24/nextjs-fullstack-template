@@ -1,14 +1,25 @@
+import axios from 'axios';
+
 import Layout from '../components/layouts/Layout';
 import CustomHead from '../components/sections/CustomHead';
 import { useLocale } from '../hooks/useLocale';
-import { ENV } from '../lib/constans';
+import { BASE_URL } from '../lib/constans';
 
-import type { NextPage } from 'next';
+import type { NameData } from './api/name';
+import type { InferGetStaticPropsType, NextPage } from 'next';
 
-const Home: NextPage = () => {
-  const { t } = useLocale();
+export async function getStaticProps() {
+  return axios<NameData>({
+    baseURL: BASE_URL,
+    url: '/api/name',
+    method: 'GET',
+  }).then(res => ({ props: res.data }));
+}
 
-  console.log('stage =', ENV);
+type Props = InferGetStaticPropsType<typeof getStaticProps>;
+
+const Home: NextPage<Props> = name => {
+  const { t, locale } = useLocale();
 
   return (
     <Layout>
@@ -17,7 +28,9 @@ const Home: NextPage = () => {
         description="Next.js Template with Tailwind.css created by @derodero24"
       />
       <div className="container">
-        <p className="text-xl">{t('home/greet')}</p>
+        <p className="text-xl">
+          {t('home/greet')} {name[locale]}!!
+        </p>
       </div>
     </Layout>
   );

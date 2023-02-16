@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import { useLocale } from '../../hooks/useLocale';
-import { DOMAIN } from '../../lib/constans';
+import { BASE_URL } from '../../lib/constans';
 
 interface Props {
   title: string | undefined;
@@ -18,15 +18,15 @@ export default function CustomHead({
 }: Props) {
   const { locale, asPath, defaultLocale } = useLocale();
 
-  const fullUrl = new URL(`https://${DOMAIN}${asPath}`);
+  const fullUrl = new URL(asPath, BASE_URL);
   const localePath = locale === defaultLocale ? '' : `/${locale}`;
   const url = fullUrl.origin + localePath + fullUrl.pathname;
 
-  const image = imageUrl ?? `https://${DOMAIN}/icon-512.png`;
+  const image = imageUrl ?? `${fullUrl.origin}/icon-512.png`;
   const type = article ? 'article' : 'website';
 
-  const defaultUrl = `https://${DOMAIN}${fullUrl.pathname}`;
-  const jaUrl = `https://${DOMAIN}/ja${fullUrl.pathname}`;
+  const defaultUrl = `${fullUrl.origin}${fullUrl.pathname}`;
+  const jaUrl = `${fullUrl.origin}/ja${fullUrl.pathname}`;
 
   return (
     <Head>
