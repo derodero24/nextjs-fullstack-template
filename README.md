@@ -1,8 +1,9 @@
-# Next.js Template with Tailwind CSS
+# Next.js Best Template
 
 ## Features
 
 - TypeScript
+- Tailwind CSS
 - SCSS
 - ESLint (strict)
 - Prettier
@@ -18,6 +19,32 @@
 - Environment variables using .env
 - Common Layout
 - robots.txt
+
+## Get started
+
+1. Clone repository
+
+```sh
+$ git clone https://github.com/derodero24/nextjs-best-template
+```
+
+2. Install packages
+
+```sh
+$ pnpm i
+```
+
+3. Prepare .env
+
+```sh
+$ cp .env.local.example .env.local
+```
+
+4. Run
+
+```sh
+$ pnpm run dev
+```
 
 ## Commands
 
