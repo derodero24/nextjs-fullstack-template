@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 import Layout from '../components/layouts/Layout';
-import CustomHead from '../components/sections/CustomHead';
 import { useLocale } from '../hooks/useLocale';
 import { BASE_URL } from '../lib/constans';
 
@@ -24,11 +23,10 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <Layout>
-      <CustomHead
-        title="Next.js Template with Tailwind.css"
-        description="Next.js Template with Tailwind.css created by @derodero24"
-      />
+    <Layout
+      title="Next.js Template with Tailwind.css"
+      description="Next.js Template with Tailwind.css created by @derodero24"
+    >
       <div className="container">
         <p className="text-xl">
           {t('home/greet')} {name[locale]}!!

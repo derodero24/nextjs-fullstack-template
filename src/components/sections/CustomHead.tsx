@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useLocale } from '../../hooks/useLocale';
 import { BASE_URL } from '../../lib/constans';
 
-interface Props {
+export interface CustomHeadProps {
   title: string | undefined;
   description: string | undefined;
   imageUrl?: string;
@@ -15,7 +15,7 @@ export default function CustomHead({
   description,
   imageUrl,
   article,
-}: Props) {
+}: CustomHeadProps) {
   const { locale, asPath, defaultLocale } = useLocale();
 
   const fullUrl = new URL(asPath, BASE_URL);
