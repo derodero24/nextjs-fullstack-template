@@ -14,6 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     define1vh();
     window.addEventListener('resize', define1vh);
+    () => window.removeEventListener('resize', define1vh);
   }, []);
 
   return (
