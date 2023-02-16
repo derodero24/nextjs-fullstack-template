@@ -8,7 +8,6 @@
 - ESLint (strict)
 - Prettier
 - pnpm
-- SSG (Static Site Generation) using `getStaticProps`
 - Simple API route
 - Extended Tailwind Configuration
 - Theme switching (Light/Dark)
