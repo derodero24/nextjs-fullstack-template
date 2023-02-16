@@ -2,6 +2,7 @@
   "name": "nextjs-best-template",
   "private": true,
   "license": "UNLICENSED",
+  "author": "@derodero24",
   "scripts": {
     "build": "next build",
     "start": "next build && next start",
