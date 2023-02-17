@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 import Layout from '../components/layouts/Layout';
 import { useLocale } from '../hooks/useLocale';
-import { BASE_URL } from '../lib/constans';
 
 import type { NameData } from './api/name';
 import type { NextPage } from 'next';
@@ -14,8 +13,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     axios<NameData>({
-      baseURL: BASE_URL,
-      url: '/api/name',
+      url: '/api/name/',
       method: 'GET',
     })
       .then(res => setName(res.data))
