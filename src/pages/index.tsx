@@ -22,8 +22,8 @@ const Home: NextPage = () => {
 
   return (
     <Layout
-      title="Next.js Template with Tailwind.css"
-      description="Next.js Template with Tailwind.css created by @derodero24"
+      title="Next.js Best Template"
+      description="Next.js Best Template created by @derodero24"
     >
       <div className="container">
         <p className="text-xl">

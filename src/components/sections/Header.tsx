@@ -10,11 +10,11 @@ export default function Header() {
       <Link href="/" className="text-xl">
         Next.js
       </Link>
-      <nav className="flex items-center space-x-6">
+      <div className="flex items-center space-x-6">
         <ThemeButton className="icon-btn" />
         <LangButton className="icon-btn" />
         <GitHubButton className="icon-btn" />
-      </nav>
+      </div>
     </header>
   );
 }
