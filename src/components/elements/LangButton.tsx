@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
 import { IoLanguage } from 'react-icons/io5';
 
 const LANGS = [
@@ -8,42 +7,25 @@ const LANGS = [
 ] as const;
 
 export default function LangButton(props: { className: string }) {
-  const [showDropdown, setShowDropdown] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Hide dropdown on click other points
-    const onClickWindow = (event: MouseEvent) => {
-      if (showDropdown && !ref.current?.contains(event.target as Node)) {
-        setShowDropdown(false);
-      }
-    };
-    window.addEventListener('click', onClickWindow);
-    return () => window.removeEventListener('click', onClickWindow);
-  }, [showDropdown]);
-
   return (
-    <div className="relative inline-block text-left" ref={ref}>
-      <IoLanguage {...props} onClick={() => setShowDropdown(prev => !prev)} />
+    <div className="group relative inline-block text-left">
+      <IoLanguage {...props} />
 
-      {showDropdown && (
-        <div
-          className="absolute right-0 mt-2 rounded-md bg-gray-50 py-1 shadow-lg ring-1 ring-black/5"
-          onBlur={e => console.log(e)}
-        >
-          {LANGS.map(lang => (
-            <Link
-              href=""
-              locale={lang.locale}
-              key={lang.locale}
-              className="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-              onClick={() => setShowDropdown(false)}
-            >
-              {lang.label}
-            </Link>
-          ))}
-        </div>
-      )}
+      <div
+        className="absolute -right-0 origin-top-right scale-0 overflow-hidden rounded-md bg-gray-50 opacity-0 shadow-lg ring-1 ring-black/5 duration-200 group-hover:scale-100 group-hover:opacity-100"
+        onBlur={e => console.log(e)}
+      >
+        {LANGS.map(lang => (
+          <Link
+            href=""
+            locale={lang.locale}
+            key={lang.locale}
+            className="block whitespace-nowrap px-4 py-2 text-sm text-gray-700 first:pt-3 last:pb-3 hover:bg-gray-200"
+          >
+            {lang.label}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
