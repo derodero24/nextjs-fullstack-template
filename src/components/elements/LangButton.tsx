@@ -8,7 +8,7 @@ const LANGS = [
 
 export default function LangButton(props: { className: string }) {
   return (
-    <div className="group relative inline-block text-left">
+    <div className="group relative">
       <IoLanguage {...props} />
 
       <div
