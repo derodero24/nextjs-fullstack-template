@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -20,5 +21,20 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // writing-mode対応(縦書き等)
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        '.horizontal-tb': {
+          writingMode: 'horizontal-tb',
+        },
+        '.vertical-rl': {
+          writingMode: 'vertical-rl',
+        },
+        '.vertical-lr': {
+          writingMode: 'vertical-lr',
+        },
+      });
+    }),
+  ],
 };
