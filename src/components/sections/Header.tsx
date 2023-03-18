@@ -6,7 +6,7 @@ import ThemeButton from '../elements/ThemeButton';
 
 export default function Header() {
   return (
-    <header className="container flex justify-between">
+    <header className="container flex justify-between px-4 py-2">
       <Link href="/" className="text-xl">
         Next.js
       </Link>

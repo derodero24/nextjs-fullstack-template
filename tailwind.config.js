@@ -16,25 +16,22 @@ module.exports = {
       fontSize: {
         '2xs': ['0.625rem', '0.875rem'],
       },
+      height: {
+        '100svh': '100svh',
+        '100lvh': '100lvh',
+        '100dvh': '100dvh',
+      },
       minHeight: {
-        'inner-screen': '100svh',
+        '100svh': '100svh',
+        '100lvh': '100lvh',
+        '100dvh': '100dvh',
+      },
+      maxHeight: {
+        '100svh': '100svh',
+        '100lvh': '100lvh',
+        '100dvh': '100dvh',
       },
     },
   },
-  plugins: [
-    // writing-mode対応(縦書き等)
-    plugin(({ addUtilities }) => {
-      addUtilities({
-        '.horizontal-tb': {
-          writingMode: 'horizontal-tb',
-        },
-        '.vertical-rl': {
-          writingMode: 'vertical-rl',
-        },
-        '.vertical-lr': {
-          writingMode: 'vertical-lr',
-        },
-      });
-    }),
-  ],
+  plugins: [],
 };

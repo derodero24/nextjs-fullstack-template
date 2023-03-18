@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import Layout from '../components/layouts/Layout';
+import Layout from '../components/Layout';
 import { useLocale } from '../hooks/useLocale';
 
 import type { NameData } from './api/name';
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       title="Next.js Best Template"
       description="Next.js Best Template created by @derodero24"
     >
-      <div className="container">
+      <div className="container px-4 py-2">
         <p className="text-xl">
           {t('home/greet')} {name[locale]}!!
         </p>
