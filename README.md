@@ -48,13 +48,13 @@ $ cp .env.local.example .env.local
 4. Run
 
 ```sh
-$ pnpm run dev
+$ pnpm dev
 ```
 
 ## Commands
 
 ```sh
-$ npm run build
-$ npm run start
-$ npm run dev
+$ pnpm build
+$ pnpm start
+$ pnpm dev
 ```
