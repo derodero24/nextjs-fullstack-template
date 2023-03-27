@@ -12,6 +12,7 @@ specifiers:
   eslint: ^8.36.0
   eslint-config-next: ^13.2.4
   eslint-config-prettier: ^8.7.0
+  eslint-plugin-jsx-a11y: ^6.7.1
   eslint-plugin-tailwindcss: ^3.10.1
   eslint-plugin-unused-imports: ^2.0.0
   next: ^13.2.4
@@ -48,6 +49,7 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-next: 13.2.4_vgl77cfdswitgr47lm5swmv43m
   eslint-config-prettier: 8.7.0_eslint@8.36.0
+  eslint-plugin-jsx-a11y: 6.7.1_eslint@8.36.0
   eslint-plugin-tailwindcss: 3.10.1_tailwindcss@3.2.7
   eslint-plugin-unused-imports: 2.0.0_dchlkxfdm6cbfc25bfo3oeha6e
   prettier-plugin-tailwindcss: 0.2.5_prettier@2.8.4
