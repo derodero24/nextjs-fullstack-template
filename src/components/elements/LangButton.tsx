@@ -11,10 +11,7 @@ export default function LangButton(props: { className: string }) {
     <div className="group relative">
       <IoLanguage {...props} />
 
-      <div
-        className="absolute -right-0 origin-top-right scale-0 overflow-hidden rounded-md bg-gray-50 opacity-0 shadow-lg ring-1 ring-black/5 duration-200 group-hover:scale-100 group-hover:opacity-100"
-        onBlur={e => console.log(e)}
-      >
+      <div className="absolute -right-0 origin-top-right scale-0 overflow-hidden rounded-md bg-gray-50 opacity-0 shadow-lg ring-1 ring-black/5 duration-200 group-hover:scale-100 group-hover:opacity-100">
         {LANGS.map(lang => (
           <Link
             href=""
