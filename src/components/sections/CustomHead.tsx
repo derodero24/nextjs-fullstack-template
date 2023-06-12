@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { useLocale } from '../../hooks/useLocale';
+import useLocale from '../../hooks/useLocale';
 import { BASE_URL } from '../../utils/constants';
 
 export interface CustomHeadProps {

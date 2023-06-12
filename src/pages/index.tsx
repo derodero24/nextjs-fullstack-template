@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 import Layout from '../components/Layout';
-import { useLocale } from '../hooks/useLocale';
+import useLocale from '../hooks/useLocale';
 
 import type { NameData } from './api/name';
 import type { NextPage } from 'next';

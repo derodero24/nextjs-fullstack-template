@@ -16,7 +16,7 @@ function pick(obj: NestedObject, key: string) {
     );
 }
 
-export const useLocale = () => {
+export default function useLocale() {
   const router = useRouter();
 
   const currentLocale = (router.locale ??
@@ -27,4 +27,4 @@ export const useLocale = () => {
     pick(translations, `${key}/${currentLocale}`) as string;
 
   return { ...router, locale: currentLocale, t };
-};
+}
