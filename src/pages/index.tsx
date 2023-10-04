@@ -25,8 +25,8 @@ const Home: NextPage = () => {
       title="Next.js Best Template"
       description="Next.js Best Template created by @derodero24"
     >
-      <div className="container px-4 py-2">
-        <p className="text-xl">
+      <div className="container px-4 py-6">
+        <p className="text-3xl">
           {t('home/greet')} {name[locale]}!!
         </p>
       </div>
