@@ -8,6 +8,7 @@ const withPWA = require('next-pwa')({
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  output: 'standalone',
   i18n: {
     locales: ['en', 'ja'],
     defaultLocale: 'en',
