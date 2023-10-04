@@ -26,7 +26,7 @@ export default function CustomHead({
   const type = article ? 'article' : 'website';
 
   const defaultUrl = `${fullUrl.origin}${fullUrl.pathname}`;
-  const jaUrl = `${fullUrl.origin}/ja${fullUrl.pathname}`;
+  const enUrl = `${fullUrl.origin}/en${fullUrl.pathname}`;
 
   return (
     <Head>
@@ -45,8 +45,8 @@ export default function CustomHead({
 
       {/* Alternate */}
       <link rel="alternate" hrefLang="x-default" href={defaultUrl} />
-      <link rel="alternate" hrefLang="en" href={defaultUrl} />
-      <link rel="alternate" hrefLang="ja" href={jaUrl} />
+      <link rel="alternate" hrefLang="ja" href={defaultUrl} />
+      <link rel="alternate" hrefLang="en" href={enUrl} />
     </Head>
   );
 }

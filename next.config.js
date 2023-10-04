@@ -10,8 +10,8 @@ const nextConfig = {
   trailingSlash: true,
   output: 'standalone',
   i18n: {
-    locales: ['en', 'ja'],
-    defaultLocale: 'en',
+    locales: ['ja', 'en'],
+    defaultLocale: 'ja',
   },
 };
 

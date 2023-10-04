@@ -21,7 +21,7 @@ export default function useLocale() {
 
   const currentLocale = (router.locale ??
     router.defaultLocale ??
-    'en') as LocaleCode;
+    'ja') as LocaleCode;
 
   const t = (key: string) =>
     pick(translations, `${key}/${currentLocale}`) as string;
