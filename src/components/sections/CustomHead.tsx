@@ -28,6 +28,8 @@ export default function CustomHead({
   const defaultUrl = `${fullUrl.origin}${fullUrl.pathname}`;
   const enUrl = `${fullUrl.origin}/en${fullUrl.pathname}`;
 
+  const domain = fullUrl.origin.replace(/^https?:\/\//, '');
+
   return (
     <Head>
       <title>{title}</title>
@@ -42,6 +44,12 @@ export default function CustomHead({
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
       <meta property="og:type" content={type} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content='@derodero24' />
+      <meta name="twitter:domain" content={domain} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
 
       {/* Alternate */}
       <link rel="alternate" hrefLang="x-default" href={defaultUrl} />
