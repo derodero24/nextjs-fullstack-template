@@ -45,7 +45,7 @@ export default function CustomHead({
       <meta property="og:image" content={image} />
       <meta property="og:type" content={type} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content='@derodero24' />
+      <meta name="twitter:site" content="@derodero24" />
       <meta name="twitter:domain" content={domain} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

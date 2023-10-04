@@ -12,15 +12,11 @@
     "plugin:tailwindcss/recommended",
     "prettier"
   ],
-  "ignorePatterns": [
-    "*.config.js"
-  ],
+  "ignorePatterns": ["*.config.js"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "unused-imports"
-  ],
+  "plugins": ["unused-imports"],
   "rules": {
     "sort-imports": [
       "warn",
@@ -35,10 +31,7 @@
           "builtin",
           "external",
           "internal",
-          [
-            "parent",
-            "sibling"
-          ],
+          ["parent", "sibling"],
           "index",
           "object",
           "type"
