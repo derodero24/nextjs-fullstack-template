@@ -16,7 +16,9 @@ const Home: NextPage = () => {
       url: '/api/name/',
       method: 'GET',
     })
-      .then(res => setName(res.data))
+      .then(res => {
+        setName(res.data);
+      })
       .catch(console.error);
   }, []);
 

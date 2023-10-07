@@ -6,7 +6,9 @@
   "scripts": {
     "build": "next build",
     "start": "next build && next start",
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint": "next lint && prettier --check **/*.{ts,tsx,js}",
+    "lint:fix": "next lint --fix && prettier --write **/*.{ts,tsx,js}"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

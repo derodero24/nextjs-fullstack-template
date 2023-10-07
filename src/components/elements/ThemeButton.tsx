@@ -15,8 +15,22 @@ export default function ThemeButton(props: { className: string }) {
   if (!mounted) {
     return null;
   } else if (currentTheme === 'light') {
-    return <MdOutlineDarkMode {...props} onClick={() => setTheme('dark')} />;
+    return (
+      <MdOutlineDarkMode
+        {...props}
+        onClick={() => {
+          setTheme('dark');
+        }}
+      />
+    );
   } else {
-    return <MdOutlineLightMode {...props} onClick={() => setTheme('light')} />;
+    return (
+      <MdOutlineLightMode
+        {...props}
+        onClick={() => {
+          setTheme('light');
+        }}
+      />
+    );
   }
 }
