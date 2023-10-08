@@ -7,7 +7,7 @@ import useLocale from '../hooks/useLocale';
 import type { NameData } from './api/name';
 import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
   const { t, locale } = useLocale();
   const [name, setName] = useState<NameData>({ en: '', ja: '' });
 
@@ -36,4 +36,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Page;
