@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next build && next start",
     "dev": "next dev",
-    "lint": "next lint && prettier --check **/*.{ts,tsx,js}",
-    "lint:fix": "next lint --fix && prettier --write **/*.{ts,tsx,js}"
+    "lint": "prettier --check **/*.{ts,tsx,js} && next lint",
+    "lint:fix": "prettier --write **/*.{ts,tsx,js} && next lint --fix"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
